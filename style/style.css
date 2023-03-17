@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgb(231, 131, 59);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #fc7b02;
+  color: #fff;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  height: auto;
+  padding: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 70px);
+}
+
+.col-1 {
+  background-color: #d89a3e;
+  width: 33.33%;
+  height: 100%;
+  padding: 20px;
+}
+
+.col-2 {
+  background-color: white;
+  width: 66.6%;
+  height: 100%;
+  padding: 20px;
+}
+
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h6 {
+  font-size: 20px;
+  color: #fc7b02;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+img {
+  width: 250px;
+}
+
+.rechts-allign {
+  float: right;
+}
+
+.links-allign {
+  float: left;
+}
+
+footer {
+  background-color: rgb(231, 131, 59);
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+iframe {
+  width: 300px;
+  height: 300px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #f8ab04;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .col-1, .col-2 {
+    width: 100%;
+    height: auto;
+  }
+  nav {
+    display: grid;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
